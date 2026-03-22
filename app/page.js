@@ -104,7 +104,7 @@ export default function Page() {
           <div style={{fontFamily:"'DM Mono',monospace",fontSize:9,letterSpacing:'.4em',textTransform:'uppercase',color:'#4A8B3A',marginBottom:20}}>Lock In Your Spot</div>
           <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:'clamp(40px,7vw,100px)',lineHeight:.9,color:'#F5EDD8',marginBottom:24}}>GET YOUR<br/><span style={{color:'#C8A348'}}>TICKETS</span></h2>
           <p style={{fontSize:15,lineHeight:1.8,color:'rgba(245,237,216,.45)',maxWidth:440,margin:'0 auto 44px'}}>Capacity is capped. Don&apos;t be the one asking for tickets on May 4th.</p>
-          <a href="https://www.eventbrite.com/e/cinco-de-drinko-cinco-de-mayo-tickets-1985661246240" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" className="bp" style={{padding:'20px 64px',fontSize:11}}>TICKETS →</a>
+          <a href="https://www.eventbrite.com/e/cinco-de-drinko-cinco-de-mayo-tickets-1985661246240" target="_blank" rel="noopener noreferrer" className="bp" style={{padding:'20px 64px',fontSize:11}}>TICKETS →</a>
           <div style={{fontFamily:"'DM Mono',monospace",fontSize:10,color:'rgba(200,163,72,.3)',letterSpacing:'.2em',marginTop:16}}>Secure · Eventbrite</div>
         </div>
       </section>
