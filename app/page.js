@@ -32,7 +32,7 @@ export default function Page() {
         <span style={{fontFamily:"'Playfair Display',serif",fontSize:'clamp(16px,1.8vw,22px)',fontWeight:700,letterSpacing:'.05em',color:'#C8A348'}}>CINCO DE DRINKO</span>
         <div className="nl" style={{display:'flex',gap:'clamp(16px,2vw,32px)',alignItems:'center'}}>
           {['Menu','Vibe','Gallery'].map(l=><a key={l} href={`#${l.toLowerCase()}`} style={{fontFamily:"'DM Mono',monospace",fontSize:9,letterSpacing:'.25em',textTransform:'uppercase',color:'rgba(245,237,216,.4)',textDecoration:'none'}}>{l}</a>)}
-          <a href="#tickets" className="bp" style={{padding:'10px 24px',fontSize:9}}>Tickets</a>
+          <a href="#tickets" className="bp" style={{padding:'10px 24px',fontSize:9}}>TICKETS →</a>
         </div>
       </nav>
 
@@ -46,7 +46,7 @@ export default function Page() {
           <p style={{fontSize:'clamp(14px,1.3vw,18px)',color:'rgba(245,237,216,.5)',maxWidth:480,margin:'0 auto',lineHeight:1.7}}>Tacos. Tequila. The city&apos;s biggest Cinco de Mayo celebration.</p>
         </div>
         <div className="hc" style={{position:'relative',zIndex:2,display:'flex',gap:16,marginTop:40,flexWrap:'wrap',justifyContent:'center'}}>
-          <a href="#tickets" className="bp">Get Tickets</a><a href="#vibe" className="bo">Explore</a>
+          <a href="#tickets" className="bp">TICKETS →</a><a href="#vibe" className="bo">Explore</a>
         </div>
       </section>
 
@@ -104,7 +104,7 @@ export default function Page() {
           <div style={{fontFamily:"'DM Mono',monospace",fontSize:9,letterSpacing:'.4em',textTransform:'uppercase',color:'#4A8B3A',marginBottom:20}}>Lock In Your Spot</div>
           <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:'clamp(40px,7vw,100px)',lineHeight:.9,color:'#F5EDD8',marginBottom:24}}>GET YOUR<br/><span style={{color:'#C8A348'}}>TICKETS</span></h2>
           <p style={{fontSize:15,lineHeight:1.8,color:'rgba(245,237,216,.45)',maxWidth:440,margin:'0 auto 44px'}}>Capacity is capped. Don&apos;t be the one asking for tickets on May 4th.</p>
-          <a href="https://huglife.vercel.app/#tickets" target="_blank" rel="noopener noreferrer" className="bp" style={{padding:'20px 64px',fontSize:11}}>Buy Tickets →</a>
+          <a href="https://www.eventbrite.com/e/cinco-de-drinko-cinco-de-mayo-tickets-1985661246240" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" className="bp" style={{padding:'20px 64px',fontSize:11}}>TICKETS →</a>
           <div style={{fontFamily:"'DM Mono',monospace",fontSize:10,color:'rgba(200,163,72,.3)',letterSpacing:'.2em',marginTop:16}}>Secure · Eventbrite</div>
         </div>
       </section>
