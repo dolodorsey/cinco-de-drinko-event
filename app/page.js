@@ -9,7 +9,7 @@ export default function Page() {
     return () => o.disconnect();
   }, []);
   return (
-    <div style={{background:'#0A0804',color:'#F5EDD8',fontFamily:"'DM Sans',sans-serif"}}>
+    <div style={{background:'#0A0804',color:'#F5EDD8',fontFamily:"'DM Sans',sans-serif",overflowX:'hidden'}}>
       <style dangerouslySetInnerHTML={{__html:`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
         *{margin:0;padding:0;box-sizing:border-box}
@@ -75,7 +75,7 @@ export default function Page() {
             <div style={{fontFamily:"'DM Mono',monospace",fontSize:9,letterSpacing:'.4em',textTransform:'uppercase',color:'#4A8B3A',marginBottom:12}}>What Awaits</div>
             <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:'clamp(36px,6vw,80px)',lineHeight:.9,color:'#F5EDD8',marginBottom:64}}>THE <span style={{color:'#C8A348'}}>EXPERIENCE</span></h2>
           </div>
-          <div className="mg" style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:2,background:'rgba(200,163,72,.08)'}}>
+          <div className="dg mg" style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:2,background:'rgba(200,163,72,.08)'}}>
             {[['GOURMET STREET TACOS','Birria, al pastor, carnitas, carne asada — chef-crafted'],['TEQUILA FLIGHTS','Curated pours from premium distillers'],['MARGARITA BAR','Classic, spicy mango, tamarind, mezcal'],['LIVE MARIACHI','Traditional brass and strings at golden hour'],['DJ ROTATION','Reggaeton, Latin trap, Afrobeats, hip-hop'],['PHOTO ACTIVATIONS','Branded content moments designed to go viral'],['BEST DRESSED','Prizes for the best Cinco fits'],['VIP CABANAS','Bottle service, private entry, premium views'],['VENDOR VILLAGE','Local brands, artisans, and makers']].map(([t,d],i)=>
               <div key={i} className={`r d${i%3+1}`} style={{background:'#0A0804',padding:'36px 32px',borderLeft:'2px solid transparent',transition:'all .3s'}} onMouseEnter={e=>{e.currentTarget.style.borderLeftColor='#C8A348';e.currentTarget.style.background='#12100A'}} onMouseLeave={e=>{e.currentTarget.style.borderLeftColor='transparent';e.currentTarget.style.background='#0A0804'}}>
                 <div style={{fontFamily:"'Playfair Display',serif",fontSize:'clamp(16px,1.8vw,22px)',color:'#F5EDD8',marginBottom:8}}>{t}</div>
@@ -90,7 +90,7 @@ export default function Page() {
         <div className="sbg" style={{backgroundImage:'url(/logo.png)',backgroundPosition:'center',backgroundSize:'50%',opacity:.12,filter:'brightness(.4)'}}/>
         <div style={{maxWidth:1400,margin:'0 auto',position:'relative',zIndex:1}}>
           <div className="r"><h2 style={{fontFamily:"'Playfair Display',serif",fontSize:'clamp(36px,6vw,80px)',lineHeight:.9,color:'#F5EDD8',marginBottom:64}}>GALLERY</h2></div>
-          <div className="r d1 gg" style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:4}}>
+          <div className="dg r d1 gg" style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:4}}>
             {['/logo.png','/logo2.png','/logo3.png'].map((s,i)=><div key={i} style={{aspectRatio:'4/3',overflow:'hidden',background:'#12100A',display:'flex',alignItems:'center',justifyContent:'center'}}><img src={s} alt="" style={{width:'85%',height:'85%',objectFit:'contain',transition:'transform .6s cubic-bezier(0.16,1,0.3,1)'}} onMouseEnter={e=>e.currentTarget.style.transform='scale(1.05)'} onMouseLeave={e=>e.currentTarget.style.transform='scale(1)'}/></div>)}
           </div>
         </div>
@@ -110,7 +110,7 @@ export default function Page() {
       </section>
 
       <footer style={{background:'#040402',borderTop:'1px solid rgba(200,163,72,.08)',padding:'56px clamp(24px,5vw,80px) 36px'}}>
-        <div className="fg" style={{maxWidth:1400,margin:'0 auto',display:'grid',gridTemplateColumns:'2fr 1fr 1fr',gap:40}}>
+        <div className="dg fg" style={{maxWidth:1400,margin:'0 auto',display:'grid',gridTemplateColumns:'2fr 1fr 1fr',gap:40}}>
           <div><div style={{fontFamily:"'Playfair Display',serif",fontSize:28,fontWeight:700,color:'#C8A348'}}>CINCO DE DRINKO</div><div style={{fontFamily:"'DM Mono',monospace",fontSize:9,letterSpacing:'.3em',color:'#4A8B3A',marginTop:4}}>TACO TUESDAY EDT. · ATLANTA</div><p style={{fontSize:12,color:'rgba(245,237,216,.35)',marginTop:12,maxWidth:280,lineHeight:1.7}}>A KHG HugLife Event. Est. 2024.</p></div>
           <div><div style={{fontFamily:"'DM Mono',monospace",fontSize:8,letterSpacing:'.4em',color:'#C8A348',marginBottom:16}}>EVENT</div>{['Experience','Menu','Gallery'].map(l=><div key={l} style={{fontSize:12,color:'rgba(245,237,216,.35)',marginBottom:8}}>{l}</div>)}</div>
           <div><div style={{fontFamily:"'DM Mono',monospace",fontSize:8,letterSpacing:'.4em',color:'#C8A348',marginBottom:16}}>CONNECT</div>{['Get Tickets','@just.huglife','404.819.9609'].map(l=><div key={l} style={{fontSize:12,color:'rgba(245,237,216,.35)',marginBottom:8}}>{l}</div>)}</div>
